@@ -11,8 +11,8 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:3001',
-    process.env.FRONTEND_URL || 'https://stock-traders-9labvtyav-kushagra9926s-projects.vercel.app',
-    process.env.DASHBOARD_URL || 'https://stock-traders-6qzo-c8bk0p82n-kushagra9926s-projects.vercel.app'
+    process.env.FRONTEND_URL || 'https://stock-traders.vercel.app',
+    process.env.DASHBOARD_URL || 'https://stock-traders-6qzo.vercel.app'
   ],
   credentials: true
 }));
