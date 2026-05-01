@@ -25,15 +25,16 @@
     "supertest": "^6.3.3",
     "mongodb-memory-server": "^9.1.1"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "setupFilesAfterEnv": ["./tests/jest.setup.js"],
-    "testMatch": ["**/tests/**/*.test.js"],
-    "collectCoverageFrom": [
-      "routes/**/*.js",
-      "models/**/*.js",
-      "middleware/**/*.js"
-    ],
-    "testTimeout": 30000
-  }
+"jest": {
+  "testEnvironment": "node",
+  "setupFiles": ["./tests/jest.env.js"],
+  "setupFilesAfterEnv": ["./tests/jest.setup.js"],
+  "testMatch": ["**/tests/**/*.test.js"],
+  "collectCoverageFrom": [
+    "routes/**/*.js",
+    "models/**/*.js",
+    "middleware/**/*.js"
+  ],
+  "testTimeout": 30000
+}
 }
