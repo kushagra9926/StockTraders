@@ -101,7 +101,7 @@ A full-stack virtual stock trading platform where users get **$10,000 virtual mo
 ### 📋 Transaction History
 > Full history of all buy and sell trades with dates and totals
 
-![Transactions](Screenshots/User_transaction.png)
+![Transactions](Screenshots/User_transactions.png)
 
 ---
 
