@@ -127,12 +127,8 @@ A full-stack virtual stock trading platform where users get **$10,000 virtual mo
 
 ![Admin Users](Screenshots/Admin_user_section.png)
 
-<<<<<<< HEAD
 #### All Transactions
 > Filter by ALL / BUY / SELL — see every trade across all users
-=======
-![Admin Users](Screenshots/Admin_user_section.png)
->>>>>>> dd0c5658d9b6b8fe22cbdce19f8ac498bdce75df
 
 ![Admin Transactions](Screenshots/admin_transaction_section.png)
 
@@ -390,7 +386,3 @@ bash setup-git-branches.sh
 
 ---
 
-<<<<<<< HEAD
-=======
-Made with ❤️ as a college MERN stack project
->>>>>>> dd0c5658d9b6b8fe22cbdce19f8ac498bdce75df
