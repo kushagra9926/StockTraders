@@ -5,6 +5,7 @@ on:
     branches: [main, dev]
   pull_request:
     branches: [main]
+  workflow_dispatch: 
 
 jobs:
   test-backend:
@@ -51,3 +52,4 @@ jobs:
       - name: Deploy Dashboard
         working-directory: ./dashboard
         run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }} --yes
+  
