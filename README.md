@@ -110,7 +110,7 @@ Users get **$10,000 virtual money** to practice buying and selling stocks.
 ### 12. Admin — Manage Users
 > Admin can view all users with balance, role, status and join date. Can disable/enable accounts.
 
-![Admin Users](Screenshots/Admin_users_section.png)
+![Admin Users](Screenshots/Admin_user_section.png)
 
 ---
 
