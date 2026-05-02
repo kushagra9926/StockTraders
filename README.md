@@ -130,7 +130,7 @@ A full-stack virtual stock trading platform where users get **$10,000 virtual mo
 #### All Transactions
 > Filter by ALL / BUY / SELL — see every trade across all users
 
-![Admin Transactions](Screenshots/admin_transaction_section.png)
+![Admin Transactions](Screenshots/Admin_transaction_section.png)
 
 ---
 
