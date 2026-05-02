@@ -235,3 +235,5 @@ Tests cover: user registration, login, auth protection, portfolio routes.
 - ✅ Protected routes (frontend + backend)
 
 ---
+
+Made with ❤️ as a college MERN stack project
