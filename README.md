@@ -1,17 +1,20 @@
-# 📈 Stock Trading Platform — MERN Stack
+# 📈 StockTrader — MERN Stack Stock Trading Platform
 
-A full-stack virtual stock trading platform built with MongoDB, Express.js, React, and Node.js.
-Users get **$10,000 virtual money** to practice buying and selling stocks.
+A full-stack virtual stock trading platform where users get **$10,000 virtual money** to practice buying and selling real stocks in a simulated environment.
+
+![StockTrader Banner](Screenshots/User_dashboard.png)
 
 ---
 
-## 🚀 Live Demo
+## 🌐 Live Demo
 
-| App | URL |
-|---|---|
-| 🖥️ Frontend (User App) | https://stock-traders.vercel.app |
-| 📊 Admin Dashboard | https://stock-traders-6qzo.vercel.app |
-| 🔧 Backend API | https://stocktraders-ghrw.onrender.com |
+| App | URL | Status |
+|---|---|---|
+| 🖥️ Frontend (User App) | [stock-traders.vercel.app](https://stock-traders.vercel.app) | ✅ Live |
+| 📊 Admin Dashboard | [stock-traders-6qzo.vercel.app](https://stock-traders-6qzo.vercel.app) | ✅ Live |
+| 🔧 Backend API | [stocktraders-ghrw.onrender.com](https://stocktraders-ghrw.onrender.com) | ✅ Live |
+
+> ⚠️ **Note:** Backend is hosted on Render free tier — first request may take ~30 seconds to wake up.
 
 ---
 
@@ -19,105 +22,115 @@ Users get **$10,000 virtual money** to practice buying and selling stocks.
 
 | Layer | Technology |
 |---|---|
-| Frontend | React, Bootstrap 5, Material UI |
-| Backend | Node.js, Express.js |
-| Database | MongoDB (Atlas) |
-| Auth | JWT (JSON Web Tokens) |
-| Testing | Jest + Supertest |
-| Deployment | Render (backend) + Vercel (frontend) |
+| **Frontend** | React.js, Bootstrap 5, Material UI, HTML/CSS |
+| **Backend** | Node.js, Express.js, REST API |
+| **Database** | MongoDB (Atlas Cloud) |
+| **Authentication** | JWT (JSON Web Tokens) |
+| **Testing** | Jest + Supertest + mongodb-memory-server |
+| **Deployment** | Render (Backend) + Vercel (Frontend + Dashboard) |
+
+---
+
+## ✨ Features
+
+### 👤 User Features
+- ✅ Register & Login with JWT authentication
+- ✅ Start with **$10,000 virtual money**
+- ✅ Browse 10 stocks with **live simulated price changes**
+- ✅ **Buy & Sell stocks** with real-time balance update
+- ✅ **Portfolio tracking** with P&L calculation
+- ✅ Full **transaction history**
+- ✅ **Watchlist** to monitor favorite stocks
+- ✅ Protected routes with token-based auth
+
+### 🔐 Admin Features
+- ✅ Secure admin-only login
+- ✅ Dashboard with stats, charts (Buy vs Sell, Top Stocks)
+- ✅ View and manage all users (enable/disable/delete)
+- ✅ View all platform transactions with filters
 
 ---
 
 ## 📸 Screenshots
 
-### 1. User Login
-> Users login with email and password. JWT token is stored securely.
+### 🔐 User Authentication
 
-![User Login](Screenshots/User_login.png)
+#### Login Page
+![Login](Screenshots/User_login.png)
 
----
-
-### 2. User Registration
-> New users register and receive **$10,000 virtual money** to start trading.
-
-![User Register](Screenshots/User_register.png)
+#### Register Page
+![Register](Screenshots/User_register.png)
 
 ---
 
-### 3. Home Dashboard
-> Overview of cash balance, portfolio value, total holdings, total trades, top stocks and recent trades.
+### 🏠 User Dashboard
+> Overview of balance, portfolio value, holdings, and recent trades
 
-![User Dashboard](Screenshots/User_dashboard.png)
-
----
-
-### 4. Stock Market Page
-> Lists all 10 available stocks with live simulated price changes. Search by symbol or name. Buy or Sell from the table directly.
-
-![Stock Market](Screenshots/User_stockspage.png)
+![Dashboard](Screenshots/User_dashboard.png)
 
 ---
 
-### 5. Buy Stock Modal
-> Clicking **Buy** opens a modal showing current price, your balance, quantity input, and total cost.
+### 📊 Stock Market Page
+> Browse all 10 stocks with live prices, change %, volume and Buy/Sell buttons
 
-![Buy Stock](Screenshots/User_buy.png)
-
----
-
-### 6. Sell Stock Modal
-> Clicking **Sell** opens a modal confirming the quantity and total payout before executing.
-
-![Sell Stock](Screenshots/User_sell.png)
+![Stocks](Screenshots/User_stockspage.png)
 
 ---
 
-### 7. Portfolio Page
-> Shows all current holdings with quantity, average buy price, current price, total value and P&L per stock.
+### 🟢 Buy Stock
+> Click Buy on any stock — enter quantity, see total, confirm purchase
+
+![Buy](Screenshots/User_buy.png)
+
+---
+
+### 🔴 Sell Stock
+> Click Sell — same modal with red confirm button
+
+![Sell](Screenshots/User_sell.png)
+
+---
+
+### 💼 Portfolio Page
+> Track all holdings with avg buy price, current price and P&L
 
 ![Portfolio](Screenshots/User_portfolio.png)
 
 ---
 
-### 8. Transaction History
-> Complete history of all buy and sell trades with date, symbol, price and total amount.
+### 📋 Transaction History
+> Full history of all buy and sell trades with dates and totals
 
 ![Transactions](Screenshots/User_transactions.png)
 
 ---
 
-### 9. Watchlist
-> Users can save stocks to their watchlist to monitor live prices without buying.
+### ⭐ Watchlist
+> Save stocks to monitor without buying — add/remove anytime
 
 ![Watchlist](Screenshots/User_watchlist.png)
 
 ---
 
-### 10. Admin Login
-> Separate admin login page for the dashboard panel (runs on port 3001).
+### 🛡️ Admin Panel
 
+#### Admin Login
 ![Admin Login](Screenshots/Admin_login.png)
 
----
-
-### 11. Admin Dashboard Overview
-> Admin panel showing total users, transactions, and available stocks. Includes a Buy vs Sell bar chart and Top Traded Stocks pie chart with recent transactions table.
+#### Admin Dashboard
+> Stats cards, Buy vs Sell bar chart, Top Traded Stocks pie chart, Recent transactions
 
 ![Admin Dashboard](Screenshots/Admin_dashboard.png)
 
----
+#### Manage Users
+> View all users with balance, role, status — enable/disable/delete accounts
 
-### 12. Admin — Manage Users
-> Admin can view all users with balance, role, status and join date. Can disable/enable accounts.
+![Admin Users](Screenshots/Admin_user_section.png)
 
-![Admin Users](Screenshots/Admin_users_section.png)
+#### All Transactions
+> Filter by ALL / BUY / SELL — see every trade across all users
 
----
-
-### 13. Admin — All Transactions
-> Admin can view all platform transactions filtered by ALL / BUY / SELL with full user and trade details.
-
-![Admin Transactions](Screenshots/Admin_transaction_section.png)
+![Admin Transactions](Screenshots/admin_transaction_section.png)
 
 ---
 
@@ -125,56 +138,170 @@ Users get **$10,000 virtual money** to practice buying and selling stocks.
 
 ```
 stock-trading-platform/
-├── backend/
-│   ├── models/          # User, Stock, Portfolio, Transaction, Watchlist
-│   ├── routes/          # auth, stocks, portfolio, transactions, watchlist, admin
-│   ├── middleware/      # JWT auth + admin guard
-│   ├── tests/           # Jest test suite
-│   └── server.js
 │
-├── frontend/
+├── backend/                          # Node.js + Express API
+│   ├── models/
+│   │   ├── User.js                   # User schema (balance, role)
+│   │   ├── Stock.js                  # Stock schema (price, change)
+│   │   ├── Portfolio.js              # Holdings per user
+│   │   ├── Transaction.js            # Buy/Sell history
+│   │   └── Watchlist.js              # Saved stocks per user
+│   ├── routes/
+│   │   ├── auth.js                   # Register, Login, Me
+│   │   ├── stocks.js                 # Get all stocks, single stock
+│   │   ├── portfolio.js              # Buy, Sell, Get portfolio
+│   │   ├── transactions.js           # Get transaction history
+│   │   ├── watchlist.js              # Add/Remove/Get watchlist
+│   │   └── admin.js                  # Admin: users, stats
+│   ├── middleware/
+│   │   └── auth.js                   # JWT protect + adminOnly
+│   ├── tests/
+│   │   ├── auth.test.js              # Jest test suite (23 tests)
+│   │   └── jest.setup.js             # mongodb-memory-server setup
+│   └── server.js                     # Express app entry point
+│
+├── frontend/                         # React User App (port 3000)
 │   └── src/
-│       ├── pages/       # Login, Register, Home, Stocks, Portfolio, Transactions, Watchlist
-│       ├── components/  # Navbar
-│       └── context/     # AuthContext (JWT)
+│       ├── context/AuthContext.js    # JWT auth + axios config
+│       ├── components/Navbar.js      # Navigation with balance
+│       └── pages/
+│           ├── Login.js
+│           ├── Register.js
+│           ├── Home.js
+│           ├── Stocks.js
+│           ├── Portfolio.js
+│           ├── Transactions.js
+│           └── Watchlist.js
 │
-└── dashboard/
-    └── src/
-        ├── pages/       # AdminLogin, DashboardHome, Users, AllTransactions
-        └── components/  # Sidebar
+├── dashboard/                        # React Admin Panel (port 3001)
+│   └── src/
+│       ├── components/Sidebar.js
+│       └── pages/
+│           ├── AdminLogin.js
+│           ├── DashboardHome.js      # Charts + stats
+│           ├── Users.js              # User management
+│           └── AllTransactions.js    # All trades + filters
+│
+├── Screenshots/                      # App screenshots
+├── .github/workflows/main.yml        # CI/CD GitHub Actions
+├── render.yaml                       # Render deployment config
+├── RENDER_VERCEL_DEPLOYMENT.md       # Deployment guide
+└── README.md
 ```
 
 ---
 
 ## ⚙️ Local Setup
 
+### Prerequisites
+- Node.js v16+
+- MongoDB (local) or MongoDB Atlas account
+- Git
+
+### 1. Clone the Repository
+
 ```bash
-# 1. Backend (Terminal 1)
+git clone https://github.com/YOUR_USERNAME/stock-trading-platform.git
+cd stock-trading-platform
+```
+
+### 2. Backend Setup
+
+```bash
 cd backend
 npm install
-cp .env.example .env    # fill in MONGO_URI and JWT_SECRET
-npm run dev             # runs on http://localhost:5000
-
-# 2. Frontend (Terminal 2)
-cd frontend
-npm install
-npm start               # runs on http://localhost:3000
-
-# 3. Dashboard (Terminal 3)
-cd dashboard
-npm install
-npm start               # runs on http://localhost:3001 (press Y when asked)
+cp .env.example .env
 ```
 
-### .env file
-
-```
+Edit `.env`:
+```env
 PORT=5000
-MONGO_URI=mongodb+srv://youruser:yourpass@cluster0.mongodb.net/stocktrading
-JWT_SECRET=mysecretkey123
+MONGO_URI=mongodb://localhost:27017/stocktrading
+JWT_SECRET=mysecretkey123456
 JWT_EXPIRE=7d
 NODE_ENV=development
 ```
+
+```bash
+npm run dev
+# ✅ MongoDB Connected!
+# ✅ Server running on port 5000
+```
+
+### 3. Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+# ✅ Opens at http://localhost:3000
+```
+
+### 4. Dashboard Setup
+
+```bash
+cd dashboard
+npm install
+npm start
+# Press Y when asked about different port
+# ✅ Opens at http://localhost:3001
+```
+
+### 5. Make Yourself Admin
+
+```bash
+mongosh
+use stocktrading
+db.users.updateOne({ email: "your@email.com" }, { $set: { role: "admin" } })
+exit
+```
+
+---
+
+## 🧪 Running Tests
+
+```bash
+cd backend
+npm install
+npm test
+```
+
+**Test Coverage:**
+- ✅ User registration (success + failure cases)
+- ✅ Login (correct + wrong credentials)
+- ✅ JWT token validation
+- ✅ Protected route access
+- ✅ Portfolio, transactions, watchlist routes
+- ✅ Admin access control (403 for non-admins)
+
+> Tests use `mongodb-memory-server` — no real database or `.env` needed!
+
+```
+Tests:  23 passed, 23 total
+```
+
+---
+
+## ☁️ Deployment
+
+### Backend → Render
+
+| Setting | Value |
+|---|---|
+| Root Directory | `backend` |
+| Build Command | `npm install` |
+| Start Command | `node server.js` |
+| Environment | `NODE_ENV=production` |
+
+### Frontend & Dashboard → Vercel
+
+| Setting | Value |
+|---|---|
+| Root Directory | `frontend` or `dashboard` |
+| Framework | Create React App |
+| Environment Variable | `REACT_APP_API_URL=https://your-render-url.onrender.com` |
+
+See full guide in [RENDER_VERCEL_DEPLOYMENT.md](RENDER_VERCEL_DEPLOYMENT.md)
 
 ---
 
@@ -182,58 +309,80 @@ NODE_ENV=development
 
 | Branch | Purpose |
 |---|---|
-| `main` | Production code |
+| `main` | Production-ready code |
 | `dev` | Active development |
 | `feature/frontend` | Frontend features |
 | `feature/backend` | Backend features |
-| `feature/dashboard` | Dashboard features |
-| `hotfix` | Bug fixes |
+| `feature/dashboard` | Admin dashboard features |
+| `hotfix` | Emergency bug fixes |
 
 ```bash
-bash setup-git-branches.sh   # auto-creates all branches
+# Auto-create all branches
+bash setup-git-branches.sh
 ```
 
 ---
 
-## ☁️ Deployment
+## 📡 API Endpoints
 
-| Service | Platform | Cost |
+### Auth
+| Method | Endpoint | Description |
 |---|---|---|
-| Backend API | Render (free tier) | $0 |
-| Frontend | Vercel (free tier) | $0 |
-| Admin Dashboard | Vercel (free tier) | $0 |
-| Database | MongoDB Atlas (free tier) | $0 |
+| POST | `/api/auth/register` | Register new user |
+| POST | `/api/auth/login` | Login user |
+| GET | `/api/auth/me` | Get current user |
 
-See `RENDER_VERCEL_DEPLOYMENT.md` for full deployment steps.
+### Stocks
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/stocks` | Get all stocks |
+| GET | `/api/stocks/:symbol` | Get single stock |
+
+### Portfolio
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/portfolio` | Get user portfolio |
+| POST | `/api/portfolio/buy` | Buy a stock |
+| POST | `/api/portfolio/sell` | Sell a stock |
+
+### Transactions
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/transactions` | Get trade history |
+
+### Watchlist
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/watchlist` | Get watchlist |
+| POST | `/api/watchlist/add` | Add stock |
+| DELETE | `/api/watchlist/:symbol` | Remove stock |
+
+### Admin (🔐 Admin only)
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/admin/users` | Get all users |
+| GET | `/api/admin/stats` | Get platform stats |
+| PUT | `/api/admin/users/:id/toggle` | Enable/Disable user |
+| DELETE | `/api/admin/users/:id` | Delete user |
 
 ---
 
-## 🧪 Testing
+## 💰 Cost — 100% Free
 
-```bash
-cd backend
-npm test
-```
+| Service | Free Tier |
+|---|---|
+| Render | 750 hrs/month |
+| Vercel | Unlimited deploys |
+| MongoDB Atlas | 512MB storage |
 
-Tests cover: user registration, login, auth protection, portfolio routes.
-
----
-
-## ✨ Features
-
-- ✅ User registration & login (JWT auth)
-- ✅ $10,000 virtual starting balance
-- ✅ Browse 10 live stocks with simulated price changes
-- ✅ Buy and sell stocks with modal confirmation
-- ✅ Portfolio tracking with P&L calculation
-- ✅ Full transaction history
-- ✅ Watchlist to monitor stocks
-- ✅ Admin panel with user management
-- ✅ Admin transaction monitoring with BUY/SELL filter
-- ✅ Charts showing trade activity (Buy vs Sell, Top Traded Stocks)
-- ✅ Responsive design (Bootstrap)
-- ✅ Protected routes (frontend + backend)
+**Total monthly cost: $0** 🎉
 
 ---
 
-Made with ❤️ as a college MERN stack project
+## 👨‍💻 Author
+
+**Kushagra**
+- GitHub: [@kushagra9926](https://github.com/kushagra9926)
+
+---
+
