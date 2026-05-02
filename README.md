@@ -33,91 +33,91 @@ Users get **$10,000 virtual money** to practice buying and selling stocks.
 ### 1. User Login
 > Users login with email and password. JWT token is stored securely.
 
-![User Login](./User_login.png)
+![User Login](Screenshots/User_login.png)
 
 ---
 
 ### 2. User Registration
 > New users register and receive **$10,000 virtual money** to start trading.
 
-![User Register](./User_register.png)
+![User Register](Screenshots/User_register.png)
 
 ---
 
 ### 3. Home Dashboard
 > Overview of cash balance, portfolio value, total holdings, total trades, top stocks and recent trades.
 
-![User Dashboard](./User_dashboard.png)
+![User Dashboard](Screenshots/User_dashboard.png)
 
 ---
 
 ### 4. Stock Market Page
 > Lists all 10 available stocks with live simulated price changes. Search by symbol or name. Buy or Sell from the table directly.
 
-![Stock Market](./User_stockspage.png)
+![Stock Market](Screenshots/User_stockspage.png)
 
 ---
 
 ### 5. Buy Stock Modal
 > Clicking **Buy** opens a modal showing current price, your balance, quantity input, and total cost.
 
-![Buy Stock](./User_buy.png)
+![Buy Stock](Screenshots/User_buy.png)
 
 ---
 
 ### 6. Sell Stock Modal
 > Clicking **Sell** opens a modal confirming the quantity and total payout before executing.
 
-![Sell Stock](./User_sell.png)
+![Sell Stock](Screenshots/User_sell.png)
 
 ---
 
 ### 7. Portfolio Page
 > Shows all current holdings with quantity, average buy price, current price, total value and P&L per stock.
 
-![Portfolio](./User_portfolio.png)
+![Portfolio](Screenshots/User_portfolio.png)
 
 ---
 
 ### 8. Transaction History
 > Complete history of all buy and sell trades with date, symbol, price and total amount.
 
-![Transactions](./User_transactions.png)
+![Transactions](Screenshots/User_transactions.png)
 
 ---
 
 ### 9. Watchlist
 > Users can save stocks to their watchlist to monitor live prices without buying.
 
-![Watchlist](./User_watchlist.png)
+![Watchlist](Screenshots/User_watchlist.png)
 
 ---
 
 ### 10. Admin Login
 > Separate admin login page for the dashboard panel (runs on port 3001).
 
-![Admin Login](./Admin_login.png)
+![Admin Login](Screenshots/Admin_login.png)
 
 ---
 
 ### 11. Admin Dashboard Overview
 > Admin panel showing total users, transactions, and available stocks. Includes a Buy vs Sell bar chart and Top Traded Stocks pie chart with recent transactions table.
 
-![Admin Dashboard](./Admin_dashboard.png)
+![Admin Dashboard](Screenshots/Admin_dashboard.png)
 
 ---
 
 ### 12. Admin — Manage Users
 > Admin can view all users with balance, role, status and join date. Can disable/enable accounts.
 
-![Admin Users](./Admin_users_section.png)
+![Admin Users](Screenshots/Admin_users_section.png)
 
 ---
 
 ### 13. Admin — All Transactions
 > Admin can view all platform transactions filtered by ALL / BUY / SELL with full user and trade details.
 
-![Admin Transactions](./Admin_transaction_section.png)
+![Admin Transactions](Screenshots/Admin_transaction_section.png)
 
 ---
 
